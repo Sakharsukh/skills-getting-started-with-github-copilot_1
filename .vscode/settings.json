@@ -3,6 +3,12 @@
         "/^node --check src/static/app\\.js$/": {
             "approve": true,
             "matchCommandLine": true
-        }
+        },
+        "printf": true,
+        "/^python -m pytest -q tests/test_app\\.py -k duplicate$/": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "/usr/local/bin/python": true
     }
 }
